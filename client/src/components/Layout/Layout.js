@@ -159,6 +159,7 @@ class Layout extends Component {
                     childId={item.childId}
                     title={item.title}
                     dropDownList={item.dropDownList}
+                    to={item.to}
                 />
               })}
               {/*<div

@@ -5,14 +5,14 @@ import DropDown from "../dropDown/dropDown";
 import DropDownFullPage from "../dropDownFullPage";
 import Login from "../../Auth/Login";
 
-const navTabs = ({homeDropDownEnter, homeDropDownLeave, parentId, childId, title, dropDownList}) => {
+const navTabs = ({homeDropDownEnter, homeDropDownLeave,to, parentId, childId, title, dropDownList}) => {
   return (
       <div
           onMouseEnter={(e) => homeDropDownEnter(e, parentId, childId)}
           onMouseLeave={(e) => homeDropDownLeave(e, parentId, childId)}
           id={parentId}
           className={cl.linkWrapper}>
-        <NavLink exact={true} to={"/"} className={cl.link}>{title}</NavLink>
+        <NavLink exact={true} to={to} className={cl.link}>{title}</NavLink>
         {parentId === "login"?
             <DropDownFullPage id={childId} parentId={parentId}>
               <div className={cl.ddContentFullPage}>
