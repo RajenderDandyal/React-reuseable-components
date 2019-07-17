@@ -1,28 +1,28 @@
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 400px;
   flex-direction: column;
-  &-drop-box{
+  &-drop-box {
     position: relative;
     height: 250px;
     width: 70%;
     border: 1px solid black;
     margin: 0 auto;
   }
-  .overlay{
+  .overlay {
     border: dashed grey 4px;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, .8);
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    &-content{
+    &-content {
       position: absolute;
       top: 50%;
       right: 0;
@@ -32,13 +32,14 @@
       font-size: 2em;
     }
   }
-  .label{
+  .label {
     text-align: center;
   }
-  .file-input{
+  .file-input {
     display: none;
   }
 }
+
 progress {
   background-color: #f3f3f3;
   border: 0;

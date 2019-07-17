@@ -140,16 +140,16 @@ class Register extends Component {
       }
       console.log(userDataFromState)
       const data = new FormData()
-      if (this.state.image){
+      if (this.state.image) {
         data.append('file', this.state.image);
       }
       try {
         let res1 = await axios.post("/api/users/image-upload", data);
-        if (res1){
-          let res2 = await axios.post("/api/users/register",userDataFromState)
-          console.log(res1,res2)
+        if (res1) {
+          let res2 = await axios.post("/api/users/register", userDataFromState)
+          console.log(res1, res2)
         }
-      }catch (e) {
+      } catch (e) {
         console.log(e)
       }
 

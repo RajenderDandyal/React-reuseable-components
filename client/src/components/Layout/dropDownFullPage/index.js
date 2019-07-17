@@ -1,16 +1,16 @@
 import React from 'react';
 
-const homeDropDown = ({children, id, parentId}) => {
+const dropDownFullPage = ({children, id, parentId}) => {
   return (
       <div id={id} style={{
         display: "none",
-        minWidth: "120px",
-        minHeight: "120px",
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight/1.2,
         padding: "0.3em",
         backgroundColor: "white",
         position: "absolute",
         top: "4em",
-        left: '0em',
+        left:0,
         zIndex: "10"
       }}>
         {children}
@@ -18,4 +18,4 @@ const homeDropDown = ({children, id, parentId}) => {
   );
 };
 
-export default homeDropDown;
+export default dropDownFullPage;
