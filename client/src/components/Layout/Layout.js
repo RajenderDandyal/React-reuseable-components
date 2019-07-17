@@ -25,14 +25,55 @@ class Layout extends Component {
       },
       {
         dropDownList: [
-          {title: "Home", to: "/"},
-          {title: "Login", to: "/login"},
-          {title: "Register", to: "/register"},
-          {title: "DragNDrop", to: "/dragndrop"},
-          {title: "Home", to: "/"},
-          {title: "Login", to: "/login"},
-          {title: "Register", to: "/register"},
-          {title: "DragNDrop", to: "/dragndrop"},
+            [
+                "First heading", [
+                {title: "Home", to: "/"},
+              {title: "Login", to: "/login"},
+              {title: "Register", to: "/register"},
+              {title: "DragNDrop", to: "/dragndrop"}
+              ]
+            ],
+          [
+                "Second heading", [
+                {title: "Home", to: "/"},
+              {title: "Login", to: "/login"},
+              {title: "Register", to: "/register"},
+              {title: "DragNDrop", to: "/dragndrop"}
+              ]
+            ],
+          [
+                "Third heading", [
+                {title: "Home", to: "/"},
+              {title: "Login", to: "/login"},
+              {title: "Register", to: "/register"},
+              {title: "DragNDrop", to: "/dragndrop"}
+              ]
+            ],
+          [
+                "Fourth heading", [
+                {title: "Home", to: "/"},
+              {title: "Login", to: "/login"},
+              {title: "Register", to: "/register"},
+              {title: "DragNDrop", to: "/dragndrop"}
+              ]
+            ],
+          [
+                "Fifth heading", [
+                {title: "Home", to: "/"},
+              {title: "Login", to: "/login"},
+              {title: "Register", to: "/register"},
+              {title: "DragNDrop", to: "/dragndrop"}
+              ]
+            ],
+          [
+                "Sixth heading", [
+                {title: "Home", to: "/"},
+              {title: "Login", to: "/login"},
+              {title: "Register", to: "/register"},
+              {title: "DragNDrop", to: "/dragndrop"}
+              ]
+            ],
+
         ],
         parentId: "login",
         childId: "loginDropDown",
@@ -75,17 +116,27 @@ class Layout extends Component {
   };
   homeDropDownEnter = (e, parentId, DropDownId) => {
     let dropdown = document.getElementById(DropDownId)
-    if (e.currentTarget.id === "login"){
-      console.log("inside login")
 
-      e.currentTarget.style.backgroundColor = "white";
-      dropdown.style.display = "block";
-      dropdown.style.left = `-${(document.getElementById(parentId).getBoundingClientRect().left)}px`
-    } else {
-      e.currentTarget.style.backgroundColor = "white";
-      dropdown.style.display = "block"
-      dropdown.style.left ="0px"
-    }
+      if (e.currentTarget.id === "login"){
+        console.log("inside login")
+
+        e.currentTarget.style.backgroundColor = "white";
+        dropdown.style.display = "block";
+        dropdown.style.left = `-${(document.getElementById(parentId).getBoundingClientRect().left)}px`
+      } else if (e.currentTarget.id === "dragndrop"){
+        console.log("inside dragndrop")
+
+        // always read the offsetWidth after setting display block
+        // never try to read elem.style.width ... elem.offsetWidth
+        e.currentTarget.style.backgroundColor = "white";
+        dropdown.style.display = "block";
+        dropdown.style.left = `-${(dropdown.offsetWidth -document.getElementById(parentId).offsetWidth)}px`
+      }else {
+        e.currentTarget.style.backgroundColor = "white";
+        dropdown.style.display = "block"
+        dropdown.style.left ="0px"
+      }
+
 
   };
   homeDropDownLeave = (e, parentId, DropDownId) => {
@@ -100,6 +151,7 @@ class Layout extends Component {
             <nav className={cl.nav}>
               {this.state.navBar.map((item, i) => {
                 return <NavTabs
+                    key={i}
                     homeDropDownEnter={this.homeDropDownEnter}
                     homeDropDownLeave={this.homeDropDownLeave}
                     parentId={item.parentId}

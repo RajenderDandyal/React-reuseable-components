@@ -1,11 +1,11 @@
 import React from 'react';
 
-const homeDropDown = ({children, id, parentId}) => {
+const homeDropDown = ({children, id}) => {
   return (
       <div id={id} style={{
         display: "none",
-        minWidth: "120px",
-        minHeight: "120px",
+        minWidth: "190px",
+        minHeight: "160px",
         padding: "0.3em",
         backgroundColor: "white",
         position: "absolute",
