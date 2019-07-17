@@ -50,7 +50,7 @@
           <entry key="css" value="5" />
           <entry key="gitignore" value="25" />
           <entry key="html" value="1" />
-          <entry key="js" value="8217" />
+          <entry key="js" value="8351" />
           <entry key="json" value="192" />
           <entry key="scss" value="1252" />
         </counts>
@@ -60,7 +60,7 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="192" />
-          <entry key="JavaScript" value="8217" />
+          <entry key="JavaScript" value="8351" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="SCSS" value="1252" />
         </counts>
@@ -69,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="132" column="13" lean-forward="true" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+            <state relative-caret-position="222">
+              <caret line="147" column="2" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="2" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -90,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/navTabs/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
@@ -340,12 +340,12 @@
       <workItem from="1563123564218" duration="2388000" />
       <workItem from="1563126448865" duration="40898000" />
       <workItem from="1563213673309" duration="12040000" />
-      <workItem from="1563361050752" duration="20784000" />
+      <workItem from="1563361050752" duration="21346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76110000" />
+    <option name="totallyTimeSpent" value="76672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -637,16 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/navTabs/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Layout/layout.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -663,10 +653,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Layout/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="132" column="13" lean-forward="true" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+        <state relative-caret-position="222">
+          <caret line="147" column="2" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="2" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/navTabs/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

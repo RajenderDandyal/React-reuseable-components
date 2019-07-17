@@ -140,7 +140,8 @@ class Layout extends Component {
 
   };
   homeDropDownLeave = (e, parentId, DropDownId) => {
-    e.currentTarget.style.backgroundColor = "";
+    //e.currentTarget.style.backgroundColor = "";
+    document.getElementById(parentId).style.backgroundColor = ""
     document.getElementById(DropDownId).style.display = "none"
   };
 
