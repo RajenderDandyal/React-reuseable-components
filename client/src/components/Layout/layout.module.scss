@@ -6,7 +6,8 @@
   height: 100%;
   cursor: pointer;
 }
-@mixin linkWrapper{
+
+@mixin linkWrapper {
   box-sizing: border-box;
   width: 100%;
   background-color: #eeeeee;
@@ -26,6 +27,7 @@
     height: 100%;
   }
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -47,20 +49,20 @@
 }
 
 .ddContentItem {
- @include linkWrapper;
+  @include linkWrapper;
   height: 3em;
 }
-.ddContentFullPage{
-  display:flex;
+
+.ddContentFullPage {
+  display: flex;
 
   flex-wrap: wrap;
 
-
-  .item{
-    width:25%;
-    padding:1em;
+  .item {
+    width: 25%;
+    padding: 1em;
     justify-content: start;
-    .content{
+    .content {
       @include linkWrapper;
       align-items: flex-start;
 

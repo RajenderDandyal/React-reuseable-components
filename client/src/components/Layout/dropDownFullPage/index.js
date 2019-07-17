@@ -5,12 +5,12 @@ const dropDownFullPage = ({children, id, parentId}) => {
       <div id={id} style={{
         display: "none",
         width: document.documentElement.clientWidth,
-        height: document.documentElement.clientHeight/1.2,
+        height: document.documentElement.clientHeight / 1.2,
         padding: "0.3em",
         backgroundColor: "white",
         position: "absolute",
         top: "4em",
-        left:0,
+        left: 0,
         zIndex: "10"
       }}>
         {children}
