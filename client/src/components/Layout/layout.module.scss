@@ -5,6 +5,7 @@
   align-items: center;
   height: 100%;
   cursor: pointer;
+
 }
 
 @mixin linkWrapper {
@@ -51,11 +52,12 @@
 .ddContentItem {
   @include linkWrapper;
   height: 3em;
+
 }
 
 .ddContentFullPage {
   display: flex;
-
+  //box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   flex-wrap: wrap;
 
   .item {

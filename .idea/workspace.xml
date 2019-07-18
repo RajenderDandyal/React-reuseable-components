@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f26dbdb-3d41-43de-a5d4-bac75469518d" name="Default Changelist" comment="" />
+    <list default="true" id="9f26dbdb-3d41-43de-a5d4-bac75469518d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -50,9 +52,9 @@
           <entry key="css" value="5" />
           <entry key="gitignore" value="25" />
           <entry key="html" value="1" />
-          <entry key="js" value="8367" />
+          <entry key="js" value="8403" />
           <entry key="json" value="192" />
-          <entry key="scss" value="1252" />
+          <entry key="scss" value="1264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -60,20 +62,20 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="192" />
-          <entry key="JavaScript" value="8367" />
+          <entry key="JavaScript" value="8403" />
           <entry key="PLAIN_TEXT" value="25" />
-          <entry key="SCSS" value="1252" />
+          <entry key="SCSS" value="1264" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+            <state relative-caret-position="122">
+              <caret line="155" column="34" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#171#2260#0" />
@@ -85,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/dropDownFullPage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="170">
+              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -94,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/navTabs/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="78">
+              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -106,17 +108,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/layout.module.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="852">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/Layout/dropDown/dropDown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="260">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -201,11 +203,11 @@
         <option value="$PROJECT_DIR$/client/src/components/UI/DragNDrop/dragnDrop.module.scss" />
         <option value="$PROJECT_DIR$/client/src/components/Auth/Register.js" />
         <option value="$PROJECT_DIR$/client/src/components/Layout/dropDownFullPage/dropDown.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Layout/dropDownFullPage/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Layout/layout.module.scss" />
-        <option value="$PROJECT_DIR$/client/src/components/Layout/dropDown/dropDown.js" />
         <option value="$PROJECT_DIR$/client/src/components/Layout/Layout.js" />
         <option value="$PROJECT_DIR$/client/src/components/Layout/navTabs/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Layout/layout.module.scss" />
+        <option value="$PROJECT_DIR$/client/src/components/Layout/dropDownFullPage/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Layout/dropDown/dropDown.js" />
       </list>
     </option>
   </component>
@@ -341,12 +343,12 @@
       <workItem from="1563123564218" duration="2388000" />
       <workItem from="1563126448865" duration="40898000" />
       <workItem from="1563213673309" duration="12040000" />
-      <workItem from="1563361050752" duration="21891000" />
+      <workItem from="1563361050752" duration="23715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77217000" />
+    <option name="totallyTimeSpent" value="79041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -631,45 +633,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/dropDownFullPage/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        <state relative-caret-position="122">
+          <caret line="155" column="34" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#171#2260#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Layout/layout.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/dropDown/dropDown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="852">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Layout/navTabs/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="78">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/Layout.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/dropDownFullPage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#171#2260#0" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Layout/dropDown/dropDown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
