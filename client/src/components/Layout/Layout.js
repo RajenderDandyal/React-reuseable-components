@@ -114,7 +114,7 @@ class Layout extends Component {
       },
     ]
   };
-  homeMouseEnter = (e, parentId, DropDownId) => {
+  handleMouseEnter = (e, parentId, DropDownId) => {
     let dropdown = document.getElementById(DropDownId)
 
     if (e.currentTarget.id === "login") {
@@ -139,7 +139,7 @@ class Layout extends Component {
 
 
   };
-  homeMouseLeave = (e, parentId, DropDownId) => {
+  handleMouseLeave = (e, parentId, DropDownId) => {
     //e.currentTarget.style.backgroundColor = "";
     document.getElementById(parentId).style.backgroundColor = ""
     document.getElementById(DropDownId).style.display = "none"
@@ -153,8 +153,8 @@ class Layout extends Component {
               {this.state.navBar.map((item, i) => {
                 return <NavTabs
                     key={i}
-                    homeMouseEnter={this.homeMouseEnter}
-                    homeMouseLeave={this.homeMouseLeave}
+                    handleMouseEnter={this.handleMouseEnter}
+                    handleMouseLeave={this.handleMouseLeave}
                     parentId={item.parentId}
                     childId={item.childId}
                     title={item.title}
