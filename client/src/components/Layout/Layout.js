@@ -144,7 +144,15 @@ class Layout extends Component {
     document.getElementById(parentId).style.backgroundColor = ""
     document.getElementById(DropDownId).style.display = "none"
   };
-
+  handleResize = ()=>{
+    this.forceUpdate()
+  }
+  componentDidMount(){
+    window.addEventListener("resize", this.handleResize)
+  }
+  componentWillUnmount(){
+    window.removeEventListener("resize", this.handleResize)
+  }
   render() {
     return (
         <React.Fragment>

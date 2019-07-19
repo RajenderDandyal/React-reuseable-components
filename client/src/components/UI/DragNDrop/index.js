@@ -7,13 +7,13 @@ class DragAndDrop extends Component {
   state = {
     dragging: false,
     files: [],
-    progress:{
-      starts:false,
-      value:0
+    progress: {
+      starts: false,
+      value: 0
     },
-    showToast:false,
-    level:"",
-    message:""
+    showToast: false,
+    level: "",
+    message: ""
   };
   dropRef = React.createRef();
   selectFile = React.createRef();
@@ -21,14 +21,15 @@ class DragAndDrop extends Component {
   showToast(level, message) {
     this.setState({
       showToast: true,
-      level:level,
-      message:message
+      level: level,
+      message: message
     }, () => {
       setTimeout(() =>
               this.setState({showToast: false})
           , 3000)
     })
   }
+
   checkMimeType = () => {
     //getting file object
     let files = this.state.files;
@@ -49,29 +50,30 @@ class DragAndDrop extends Component {
       this.setState({files: []}) // discard selected file
       console.log(err)
       return {success: false, error: err};
-    }else return {success: true, error: null};
+    } else return {success: true, error: null};
   }
-  checkFileSize=()=>{
+  checkFileSize = () => {
     let files = this.state.files;
     let size = 1048576// 1 mb in bytes
     let err = "";
-    for(var x = 0; x<files.length; x++) {
+    for (let x = 0; x < files.length; x++) {
       if (files[x].size > size) {
-        err += files[x].type+'is too large, please pick a smaller file\n';
+        err += files[x].type + 'is too large, please pick a smaller file\n';
       }
-    };
+    }
+    ;
     if (err !== '') {
-      this.setState({files:[]})
+      this.setState({files: []})
       console.log(err)
-      return {success:false, err:err}
+      return {success: false, err: err}
     }
 
-    return {success:true, err:null};
+    return {success: true, err: null};
 
   }
   handleUpload = async () => {
     let data = new FormData();
-    if (this.state.files.length > 0){
+    if (this.state.files.length > 0) {
       this.state.files.forEach((image, i) => {
         data.append('file', image)
       });
@@ -80,15 +82,18 @@ class DragAndDrop extends Component {
           onUploadProgress: ProgressEvent => {
             console.log(ProgressEvent, ProgressEvent.loaded)
             this.setState({
-              progress:{
-                starts:true,
-                value:(ProgressEvent.loaded / ProgressEvent.total*100),
+              progress: {
+                starts: true,
+                value: (ProgressEvent.loaded / ProgressEvent.total * 100),
               }
             })
           },
         })
         if (res) {
-          this.setState({files: [], progress:{starts:false, value:0}}, ()=>this.showToast("success","uploaded successfully"))
+          this.setState({
+            files: [],
+            progress: {starts: false, value: 0}
+          }, () => this.showToast("success", "uploaded successfully"))
         }
       } catch (e) {
         console.log(e)
@@ -134,13 +139,13 @@ class DragAndDrop extends Component {
         alignItem:center;
         `;
         div.innerText = `More than 3 files not allowed, and only .jpg, .jpeg, .png, .gif extension are allowed.
-          ${!this.checkMimeType().success ? `${this.checkMimeType().error}` : this.checkFileSize().success ? "": this.checkFileSize().err}       
+          ${!this.checkMimeType().success ? `${this.checkMimeType().error}` : this.checkFileSize().success ? "" : this.checkFileSize().err}       
         `;
 
         document.querySelector("#root-container").insertAdjacentElement('beforeend', div)
         setTimeout(() => {
           div.remove()
-        }, 4000)
+        }, 5000)
         this.setState({files: []})
         return
       }
@@ -222,7 +227,7 @@ class DragAndDrop extends Component {
                      key={i} src={""}/>
             )}
           </div>
-          {this.state.progress.starts ? <progress value={this.state.progress.value} max="100"></progress>: null}
+          {this.state.progress.starts ? <progress value={this.state.progress.value} max="100"></progress> : null}
           <button onClick={this.handleUpload}>Upload</button>
           <Toast
               level={this.state.level}
