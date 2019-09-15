@@ -112,6 +112,22 @@ class Layout extends Component {
         title: "DragNDrop",
         to: "/dragndrop"
       },
+      {
+        dropDownList: [
+          {title: "Home", to: "/"},
+          {title: "Login", to: "/login"},
+          {title: "Register", to: "/register"},
+          {title: "DragNDrop", to: "/dragndrop"},
+          {title: "Home", to: "/"},
+          {title: "Login", to: "/login"},
+          {title: "Register", to: "/register"},
+          {title: "DragNDrop", to: "/dragndrop"},
+        ],
+        parentId: "search",
+        childId: "searchDropDown",
+        title: "Search",
+        to: "/search"
+      },
     ]
   };
   handleMouseEnter = (e, parentId, DropDownId) => {
@@ -123,8 +139,8 @@ class Layout extends Component {
       e.currentTarget.style.backgroundColor = "white";
       dropdown.style.display = "block";
       dropdown.style.left = `-${(document.getElementById(parentId).getBoundingClientRect().left)}px`
-    } else if (e.currentTarget.id === "dragndrop") {
-      console.log("inside dragndrop")
+    } else if (e.currentTarget.id === "search") {
+      console.log("inside search")
 
       // always read the offsetWidth after setting display block
       // never try to read elem.style.width ... elem.offsetWidth

@@ -7,12 +7,14 @@ import Home from "./components/Home/Home";
 import Register from "./components/Auth/Register";
 import Layout from "./components/Layout/Layout";
 import DragAndDrop from "./components/UI/DragNDrop";
+import Search from "./components/Search";
 
 function App() {
   return (
       <div className={classes.App}>
         <Layout>
           <Switch>
+            <Route path={"/search"} component={Search}/>
             <Route path={"/dragndrop"} component={DragAndDrop}/>
             <Route path={"/register"} component={Register}/>
             <Route path={"/login"} component={Login}/>

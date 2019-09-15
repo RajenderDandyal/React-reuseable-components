@@ -1,0 +1,26 @@
+.content {
+width: 70%;
+margin: auto;
+}
+.container {
+    width: 100%;
+    background-color: antiquewhite;
+    input {
+        padding: 1em;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+}
+.delete:hover {
+    cursor: pointer;
+}
+.delete {
+    background-color: #eee;
+    display: inline-flex;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+}
